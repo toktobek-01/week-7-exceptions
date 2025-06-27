@@ -22,6 +22,7 @@ public class AgeEx {
             System.out.println("Enter your age: ");
             String ageInput = scanner.nextLine();
             int age = Integer.parseInt(ageInput);
+
             printHello(age, name);
 
         } catch (NumberFormatException e) {
