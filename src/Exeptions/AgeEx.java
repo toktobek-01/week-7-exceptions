@@ -5,7 +5,10 @@ public class AgeEx {
         if (age < 18) {
             throw new Exception("User must be ate least 18 years old");
         }
-        System.out.println("Hello" + name);
+        if (name.isEmpty()) {
+            throw new IllegalArgumentException("Name cannot be empty...");
+        }
+        System.out.println("Hello" + name + "!");
     }
 
     public static void main(String[] args) {
