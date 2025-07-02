@@ -17,7 +17,7 @@ public class GenderCheck {
             }
 
             if (!gender.equals("male") && !gender.equals("female")) {
-                throw new InvalidGenderException("Gender must be MALE of FEMALE");
+                throw new InvalidGenderException("Gender must be MALE or FEMALE");
             }
             System.out.println("Hello, " + name + "! Gender registered as: " + gender);
         } catch (InvalidGenderException e) {
